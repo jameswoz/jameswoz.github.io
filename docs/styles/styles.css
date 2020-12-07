@@ -1,6 +1,7 @@
 html {
     font-family: 'Roboto Mono', monospace;
     color: black;
+    background-color: white;
 }
 
 @keyframes intro {
@@ -10,12 +11,25 @@ html {
     100%{color: white;}
 }
 
+body {
+    overflow: hidden;
+}
+
 p {
     color: white;
 }
 
-#intro-text {
+.intro {
+    font-size: x-large;
+    padding: 25% 0;
+    margin: 10px;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+#first-intro {
     animation-name: intro;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-delay: 1s;
 }
