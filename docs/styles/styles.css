@@ -4,28 +4,23 @@ html {
     background-color: white;
 }
 
-@keyframes intro {
-    0% {color: white;}
-    25% {color: black;}
-    75% {color: black;}
-    100%{color: white;}
-}
-
 body {
     overflow: hidden;
 }
 
 p {
-    color: white;
+    color: black;
 }
 
-.intro {
-    font-size: x-large;
-    padding: 25% 0;
-    margin: 10px;
-    width: auto;
-    height: auto;
-    text-align: center;
+@keyframes fadeIn { 
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.fade-in {
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
 }
 
 #first-intro {
