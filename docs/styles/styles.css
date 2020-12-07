@@ -2,3 +2,20 @@ html {
     font-family: 'Roboto Mono', monospace;
     color: black;
 }
+
+@keyframes intro {
+    0% {color: white;}
+    25% {color: black;}
+    75% {color: black;}
+    100%{color: white;}
+}
+
+p {
+    color: white;
+}
+
+#intro-text {
+    animation-name: intro;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
