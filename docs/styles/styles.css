@@ -9,22 +9,46 @@ body {
 }
 
 p {
-    color: black;
+    color: white;
 }
 
-@keyframes fadeIn { 
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+.intro-text {
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding: 25% 0;
+    overflow: visible;
 }
 
-.fade-in {
-    animation: fadeIn ease 5s;
-    -webkit-animation: fadeIn ease 5s;
-    -moz-animation: fadeIn ease 5s;
+#fade1 {
+    animation: fade ease 2s;
+    -webkit-animation: fade ease 2s;
+    -moz-animation: fade ease 2s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
 }
 
-#first-intro {
-    animation-name: intro;
-    animation-duration: 3s;
-    animation-delay: 1s;
+#fade2 {
+    animation: fade ease 2s;
+    -webkit-animation: fade ease 2s;
+    -moz-animation: fade ease 2s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    animation-delay: 4s;
+}
+
+/* Fade in animation (use animation-direction to get a fade out effect) */
+@keyframes fade { 
+    0% {color: white;}
+    100% {color: black;}
+}
+
+@-webkit-keyframes fade {
+    0% {color: white;}
+    100% {color: black;}
+}
+
+@-moz-keyframes fade {
+    0% {color: white;}
+    100% {color: black;}
 }
