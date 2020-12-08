@@ -12,12 +12,32 @@ p {
     color: white;
 }
 
+/* Taken from Ana Tudor https://codepen.io/thebabydino/pen/mRrPwB */
+input {
+  display: block;
+  margin: 2em auto;
+  border: none;
+  padding: 0;
+  width: 10.5ch;
+  background: repeating-linear-gradient(90deg, dimgrey 0, dimgrey 1ch, transparent 0, transparent 1.5ch) 0 100% / 10ch 2px no-repeat;
+  font: 5ch droid sans mono, consolas, monospace;
+  letter-spacing: 0.5ch;
+}
+
 .intro-text {
     width: auto;
     height: auto;
     text-align: center;
     padding: 25% 0;
     overflow: visible;
+}
+
+#submit-btn {
+    width: 0px;
+    height: 0px;
+    margin: 0%;
+    padding: 0%;
+    opacity: 0;
 }
 
 #fade1 {
@@ -37,7 +57,13 @@ p {
     animation-delay: 4s;
 }
 
-/* Fade in animation (use animation-direction to get a fade out effect) */
+#password-field {
+    animation: fadeOther ease 7s;
+    -webkit-animation: fadeOther ease 7s;
+    -moz-animation: fadeOther ease 7s;
+}
+
+/* Text fade in animation (use animation-direction to get a fade out effect) */
 @keyframes fade { 
     0% {color: white;}
     100% {color: black;}
@@ -51,4 +77,23 @@ p {
 @-moz-keyframes fade {
     0% {color: white;}
     100% {color: black;}
+}
+
+/* Fade in animation for other media */
+@keyframes fadeOther { 
+    0% {opacity: 0;}
+    80% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes fadeOther {
+    0% {opacity: 0;}
+    80% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-moz-keyframes fadeOther {
+    0% {opacity: 0;}
+    80% {opacity: 0;}
+    100% {opacity: 1;}
 }
