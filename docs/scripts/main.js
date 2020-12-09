@@ -60,8 +60,7 @@ var outcome = document.getElementById("outcome-text");
     else if(player == "rock" && comp == "scissors") {
         outcome.classList.add("victory");
         outcome.innerHTML = "You won!";
-        setTimeout(doNothing, 2000);
-        window.location.href = "final.html";
+        setTimeout(changePage, 2000);
     }
     else if(player == "rock" && comp == "paper") {
         outcome.classList.add("loss");
@@ -71,8 +70,7 @@ var outcome = document.getElementById("outcome-text");
     else if(player == "paper" && comp == "rock") {
         outcome.classList.add("victory");
         outcome.innerHTML = "You won!";
-        setTimeout(doNothing, 2000);
-        window.location.href = "final.html";
+        setTimeout(changePage, 2000);
     }
     else if(player == "paper" && comp == "scissors") {
         outcome.classList.add("loss");
@@ -82,8 +80,7 @@ var outcome = document.getElementById("outcome-text");
     else if(player == "scissors" && comp == "paper") {
         outcome.classList.add("victory");
         outcome.innerHTML = "You won!";
-        setTimeout(doNothing, 2000);
-        window.location.href = "final.html";
+        setTimeout(changePage,2000);
     }
     else if(player == "scissors" && comp == "rock") {
         outcome.classList.add("loss");
@@ -99,6 +96,6 @@ function returnToBase() {
     outcome.classList.add("base-case");
 }
 
-function doNothing() {
-    return;
+function changePage() {
+    window.location.href = "final.html";
 }
