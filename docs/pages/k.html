@@ -4,13 +4,28 @@
         <title> CHRISTMAS 2020 </title>
         <meta charset="UTF-8">
         <meta name="author" content="James Wozniak">
-        <meta name="description" content="A fun site for my family as a part of my gift giving. It's been a tradition of mine for several years now, and I decided that this year I would go virtual.">
+        <meta name="description" content="Rock, paper, scissors game">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="styles/styles.css" rel="stylesheet">
+        <link href="/styles/styles.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet"> 
-        <script src="scripts/main.js"></script>
+        <script src="/scripts/main.js"></script>
     </head>
     <body>
+        <div class="rps-game">
+            <div class="item1"> 
+                <img src="/media/rock.png" alt="rock" onclick="setTimeout(choseRock, 1000)">
+                <p class="item-text"> rock </p>
+            </div>
+            <div class="item2"> 
+                <img src="/media/paper.png" alt="paper" onclick="chosePaper()">
+                <p class="item-text"> paper </p>
+            </div>
+            <div class="item3"> 
+                <img src="/media/scissors.png" alt="scissors" onclick="choseScissors()">
+                <p class="item-text"> scissors </p>
+            </div>
+        </div>
+        <p class="base-case" id="outcome-text">a</p>
     </body>
 </html>
