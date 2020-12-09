@@ -65,18 +65,18 @@ input {
 
 .loss {
     color: black;
-    animation: fade ease 2s;
-    -webkit-animation: fade ease 2s;
-    -moz-animation: fade ease 2s;
+    animation: fade ease 1s;
+    -webkit-animation: fade ease 1s;
+    -moz-animation: fade ease 1s;
     animation-direction: alternate;
     animation-iteration-count: 2;
 }
 
 .victory {
     color: black;
-    animation: fade ease 2s;
-    -webkit-animation: fade ease 2s;
-    -moz-animation: fade ease 2s;
+    animation: fade ease 1s;
+    -webkit-animation: fade ease 1s;
+    -moz-animation: fade ease 1s;
 }
 
 #submit-btn {

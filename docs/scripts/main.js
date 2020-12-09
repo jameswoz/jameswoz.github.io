@@ -55,34 +55,40 @@ var outcome = document.getElementById("outcome-text");
     if(player == comp) {
         outcome.innerHTML = "You tied!";
         outcome.classList.add("loss");
-        setTimeout(returnToBase, 4000);
+        setTimeout(returnToBase, 1800);
     }
     else if(player == "rock" && comp == "scissors") {
         outcome.classList.add("victory");
         outcome.innerHTML = "You won!";
+        setTimeout(doNothing, 2000);
+        window.location.href = "final.html";
     }
     else if(player == "rock" && comp == "paper") {
         outcome.classList.add("loss");
         outcome.innerHTML = "You lost!";
-        setTimeout(returnToBase, 4000);
+        setTimeout(returnToBase, 1800);
     }
     else if(player == "paper" && comp == "rock") {
         outcome.classList.add("victory");
         outcome.innerHTML = "You won!";
+        setTimeout(doNothing, 2000);
+        window.location.href = "final.html";
     }
     else if(player == "paper" && comp == "scissors") {
         outcome.classList.add("loss");
         outcome.innerHTML = "You lost!";
-        setTimeout(returnToBase, 4000);
+        setTimeout(returnToBase, 1800);
     }
     else if(player == "scissors" && comp == "paper") {
         outcome.classList.add("victory");
         outcome.innerHTML = "You won!";
+        setTimeout(doNothing, 2000);
+        window.location.href = "final.html";
     }
     else if(player == "scissors" && comp == "rock") {
         outcome.classList.add("loss");
         outcome.innerHTML = "You lost!";
-        setTimeout(returnToBase, 4000);
+        setTimeout(returnToBase, 1800);
     }
 }
 
@@ -91,4 +97,8 @@ function returnToBase() {
     var outcome = document.getElementById("outcome-text");
     outcome.classList.remove("loss");
     outcome.classList.add("base-case");
+}
+
+function doNothing() {
+    return;
 }
