@@ -142,8 +142,31 @@ input {
     -moz-animation: fade ease 1s;
 }
 
-/**********************************************?
+/**********************************************/
+/* final button */
+
+.last-container {
+    width: 100%;
+    height: 100%;
+    padding: 25% 0;
+    text-align: center;
+}
+
+.last-button {
+    display: flex;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    width: 10vw;
+    margin: 5vw auto;
+    height: 3vw;
+    align-items: center;
+    justify-content: center;
+}
+
+/**********************************************/
 /* glowing line*/
+
 .glow-container {
     padding: 25% 0;
     height: auto;
