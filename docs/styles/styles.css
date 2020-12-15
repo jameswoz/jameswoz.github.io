@@ -39,6 +39,7 @@ input {
     text-align: center;
     padding: 25% 0;
     overflow: visible;
+    color: white;
 }
 /*******************************************/
 /* cryptogram */
@@ -240,11 +241,11 @@ input {
 /*************************************************/
 /* fade animation */
 #submit-btn {
-    width: 0px;
-    height: 0px;
-    margin: 0%;
-    padding: 0%;
-    opacity: 0;
+    width: 5vw;
+    height: 2.5vh;
+    margin: auto;
+    padding: 10%;
+    opacity: 1;
 }
 
 #fade1 {
@@ -264,10 +265,10 @@ input {
     animation-delay: 4s;
 }
 
-#password-field {
-    animation: fadeOther ease 7s;
-    -webkit-animation: fadeOther ease 7s;
-    -moz-animation: fadeOther ease 7s;
+#crypt-fade {
+    animation: fadeOther ease 6s;
+    -webkit-animation: fadeOther ease 6s;
+    -moz-animation: fadeOther ease 6s;
 }
 
 /* Text fade in animation (use animation-direction to get a fade out effect) */

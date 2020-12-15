@@ -8,17 +8,14 @@ function getPassword() {
 
 function goK() {
     window.location.assign("/pages/k.html");
-    alert("");
 }
 
 function goM() {
     window.location.assign("/pages/m.html");
-    alert("");
 }
 
 function goT() {
     window.location.assign("/pages/t.html");
-    alert("");
 }
 
 /* submits password when enter is hit */
