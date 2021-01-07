@@ -1,48 +1,23 @@
 html {
-    background-color: #17564a;
+    background-color: #1b1d1d;
     font-family: 'Ubuntu', sans-serif;
-    color: #adb8d4;
+    color: #a5aab6;
 }
 
-body {
-    display: block;
-    width: 100vw;
-    height: 95vh;
-    overflow: hidden;
-    margin: 2% 0;
-    padding: 0;
+.nobr {
+    display: inline-flex;
+    white-space: nowrap;
 }
 
-.circuit-container {
-    display: grid;
+#cursor {
+    width: 10px;
+    height: 20px;
+    background-color: white;
+    align-self: end;
+}
+
+div.container {
     width: 100%;
-    height: 100%;
-    grid-template-columns: repeat(20, 5%);
-    grid-template-rows: repeat(10, 10%);
-}
-
-.circuit-container > div {
-    text-align: center;
-}
-
-.wires {
-    background-color: #227E6D;
-    width: 100%;
-    height: 100%;
-    border-radius: 0 0 0 50%;
-}
-
-#about-chip {
-    grid-area: 2 / 3 / span 2 / span 4;
-    background-color: gray;
-}
-
-#projects-chip {
-    grid-area: 3 / 16 / span 2/ span 3;
-    background-color: gray;
-}
-
-#contact-chip {
-    grid-area: 4 / 10 / span 3 / span 3;
-    background-color: gray;
+    height: auto;
+    margin: 5% 0%;
 }
